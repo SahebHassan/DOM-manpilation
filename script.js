@@ -1,6 +1,8 @@
 console.log('hello')
 let titleDiv=document.getElementById('title')
 console.log('before: ',titleDiv.innerText)
-titleDiv.innerText='goodbye my lover!'
+let message='Goodbye my lover!'
+titleDiv.innerText=message;
 console.log('after: ',titleDiv.innerText)
-titleDiv.innerHtml='<p>Hello</p>'
+titleDiv.innerHTML=`<p>${message}</p>`
+titleDiv.style.color='red'
