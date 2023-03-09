@@ -23,3 +23,14 @@ squares.forEach(square=>{
     square.innerText=timesClicked[square.value]
   }
 })
+function clearScores(){
+  timesClicked.red=0
+  timesClicked.yellow=0
+  timesClicked.green=0
+  squares.forEach(square=>{
+    square.innerText=''
+  })
+} 
+
+const clearGameBtn=document.getElementById('clear-game')
+clearGameBtn.onclick=()=>clearScores()
